@@ -1,0 +1,35 @@
+@font-face {
+	font-display: swap;
+	font-family: "Inter";
+	src: url("./assets/fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+	font-weight: 100 900;
+	font-style: oblique 0 90deg;
+}
+
+:root {
+	--size-50: calc(4 / 16 * 1rem);
+	--size-100: calc(8 / 16 * 1rem);
+	--size-150: calc(12 / 16 * 1rem);
+	--size-175: calc(14 / 16 * 1rem);
+	--size-200: calc(16 / 16 * 1rem);
+	--size-300: calc(24 / 16 * 1rem);
+	--size-500: calc(40 / 16 * 1rem);
+
+	--text-preset-1: var(--size-300);
+	--text-preset-2: var(--size-175);
+
+	--c-gray-900: #141414;
+	--c-gray-800: #1f1f1f;
+	--c-gray-700: #333;
+	--c-green: #c4f82a;
+	--c-white: #fff;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+* { margin: 0; }
+
+body {
+	font-family: "Inter", sans-serif;
+	background-color: var(--c-gray-900);
+}
