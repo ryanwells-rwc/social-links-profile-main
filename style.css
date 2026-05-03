@@ -57,7 +57,7 @@ main {
 	text-align: center;
 }
 
-img {
+.avatar-container img {
 	width: 88px;
 	height: 88px;
 	border-radius: 999px;
@@ -104,17 +104,19 @@ p.quote {
 	font-weight: 700;
 }
 
-button {
+.link-container a {
 	background-color: var(--c-gray-700);
 	border: none;
 	border-radius: 8px;
 	cursor: pointer;
 	color: var(--c-white);
+	text-decoration: none;
+	text-align: center;
 	padding: var(--size-150);
 	transition: all 0.3s ease-in-out;
 }
 
-button:hover, button:focus {
+.link-container a:hover, .link-container a:focus {
 	background-color: var(--c-green);
 	color: var(--c-gray-700);
 }
