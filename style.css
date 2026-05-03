@@ -33,3 +33,104 @@ body {
 	font-family: "Inter", sans-serif;
 	background-color: var(--c-gray-900);
 }
+
+main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	padding: var(--size-300);
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-width: 384px;
+	height: fit-content;
+	background-color: var(--c-gray-800);
+	border-radius: 12px;
+	padding: var(--size-500);
+}
+
+.avatar-container {
+	text-align: center;
+}
+
+img {
+	width: 88px;
+	height: 88px;
+	border-radius: 999px;
+	margin-bottom: var(--size-300);
+}
+
+h1 {
+	color: var(--c-white);
+	margin-bottom: var(--size-50);
+}
+
+p.location {
+	color: var(--c-green);
+	margin-bottom: var(--size-300);
+}
+
+p.quote {
+	color: var(--c-white);
+	margin-bottom: var(--size-300);
+}
+
+.link-container {
+	display: flex;
+	flex-direction: column;
+	gap: var(--size-200);
+	width: 100%;
+}
+
+.text-preset-1 {
+	font-size: var(--size-300);
+	font-weight: 700;
+	line-height: 1.5;
+	letter-spacing: 0;
+}
+
+.text-preset-2 {
+	font-size: var(--size-175);
+	font-weight: 400;
+	line-height: 1.5;
+	letter-spacing: 0;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+button {
+	background-color: var(--c-gray-700);
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	color: var(--c-white);
+	padding: var(--size-150);
+	transition: all 0.3s ease-in-out;
+}
+
+button:hover, button:focus {
+	background-color: var(--c-green);
+	color: var(--c-gray-700);
+}
+
+.attribution {
+	font-size: 0.6875rem;
+	text-align: center;
+	color: var(--c-white);
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+	.card {
+		min-width: 327px;
+	}
+}
